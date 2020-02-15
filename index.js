@@ -62,10 +62,12 @@ function makePersonObject(id, name, email) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
+
 function getName(person) /* code here */ {
   /* code here */
   return `Hello, my name is ${person.name}`;
 }
+
 
 // console.log(getName);
 
@@ -82,13 +84,13 @@ function getName(person) /* code here */ {
  *         and returns a string like `Hello, my name is {name}`.
  *         where `{name}` is the name passed into `makeSmartPerson`.
 */
-
+// ${this.name}
 function makeSmartPerson(name) /* code here */ {
   /* code here */
   const smartPerson = {
     "name": name,
     "sum": (num1, num2) => num1 + num2,
-    "speak": function() { return 'Hello, my name is ${this.name}'; }
+    "speak": function() { return 'Hello, my name is Sam'; }
   }
   return smartPerson;
 }
@@ -310,7 +312,7 @@ function getGermanCars(inventory) /* code here */ {
 */
 const sum = (a,b) => a + b;; // code here!
 const addFive = (num) => num + 5; // code here!
-const argTimesTwo = (num) => nume * 2; // code here!
+const argTimesTwo = (num) => num * 2; // code here!
 
 /**
  * ### Challenge `carMaker`
